@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Scraper Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Email Scraper Dashboard 🚀</h1>
+
+    <!-- Scrape Section -->
+    <input type="text" id="urlInput" placeholder="Enter website URL">
+    <button onclick="scrapeEmails()">Scrape</button>
+
+    <br><br>
+
+    <!-- Search -->
+    <input type="text" id="searchInput" placeholder="Search emails">
+    <button onclick="loadEmails()">Search</button>
+
+    <!-- Filter -->
+    <input type="text" id="domainInput" placeholder="Filter by domain (gmail.com)">
+    <button onclick="loadEmails()">Filter</button>
+
+    <!-- Export -->
+    <button onclick="exportCSV()">Export CSV</button>
+
+    <br><br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>Source</th>
+            </tr>
+        </thead>
+        <tbody id="emailTable"></tbody>
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
